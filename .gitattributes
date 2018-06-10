@@ -1,0 +1,11 @@
+# Default behaviour: convert line endings to LF (Unix-style) on checkout.
+* text eol=lf
+
+# Explicit declarations of filetypes used in the project.
+*.py text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.rst text eol=lf
+*.cfg text eol=lf
+*.ini text eol=lf
+*.yml text eol=lf

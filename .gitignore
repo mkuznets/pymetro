@@ -1,0 +1,17 @@
+__pycache__
+.DS_Store
+.coverage
+.gitconfig
+*.pyc
+*.pyo
+*.swp
+*.swn
+*.swo
+*.out
+*.rt
+*.bak
+dist
+build
+*.egg
+*.egg-info
+.*/
