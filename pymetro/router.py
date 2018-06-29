@@ -31,13 +31,13 @@ class Router:
         while queue:
             u, length = queue.popitem()
             visited[u] = True
-            for v in graph[u].keys():
+            for v in self.graph[u].keys():
                 if v not in visited:
                     if v in queue:
                         nxt = queue[v]
                     else:
                         nxt = float('inf')
-                    new_length = length + graph[u][v]
+                    new_length = length + self.graph[u][v]
                     if new_length < nxt:
                         queue[v], parent[v] = new_length, u
             if u == target: 
@@ -45,4 +45,4 @@ class Router:
                 while u:
                     path.append(u)
                     u = parent[u]
-                return Route([Station(number) for number in reversed(path)], length)
+                return Route([number for number in list(reversed(path))], length)
