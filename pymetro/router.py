@@ -22,11 +22,11 @@ class Router:
             weight[elem] = float('inf')
 
         weight[source.id_] = 0
-        not_visited = [True] * len(STATIONS)
+        not_visited = [True] * (len(STATIONS) + 1) 
         previous_stations = defaultdict(list)
 
-        time = 0
         current_v = source.id_
+        time = 0
 
         while not_visited[target.id_]:
 
